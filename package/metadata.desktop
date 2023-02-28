@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Audio Device Switcher
+Name=Audio Device Switcher Enhanced
 Comment=Simple widget to change the default audio output device/sink
 
 Icon=org.kde.plasma.volume
@@ -9,11 +9,11 @@ X-KDE-ServiceTypes=Plasma/Applet
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/main.qml
 
-X-KDE-PluginInfo-Name=org.kde.plasma.audiodeviceswitcher
+X-KDE-PluginInfo-Name=org.kde.plasma.audiodeviceswitcherenhanced
 X-KDE-PluginInfo-Category=Multimedia
-X-KDE-PluginInfo-Author=Andreas Krutzler
-X-KDE-PluginInfo-Email=andreas.krutzler@gmx.net
-X-KDE-PluginInfo-Version=0.3.0
+X-KDE-PluginInfo-Author=Jules Luzy-Riopel (inspired by Andreas Krutzler original version https://github.com/akrutzler/plasma-audio-device-switcher)
+X-KDE-PluginInfo-Email=jules@lafabriquevirtuelle.com
+X-KDE-PluginInfo-Version=0.4.0
 X-KDE-PluginInfo-Website=https://github.com/akrutzler/plasma-audio-device-switcher
 X-KDE-PluginInfo-License=GPL
 X-KDE-PluginInfo-EnabledByDefault=true
