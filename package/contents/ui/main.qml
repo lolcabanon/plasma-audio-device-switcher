@@ -38,6 +38,7 @@ Item {
 
     property bool showIconsOnly: plasmoid.configuration.showIconsOnly
     property bool useVerticalLayout: plasmoid.configuration.useVerticalLayout
+    property string defaultIconName: plasmoid.configuration.defaultIconName
 
     // from plasma-volume-control applet
     function iconNameFromPort(port, fallback) {
@@ -77,7 +78,7 @@ Item {
                 enabled: currentPort !== null
 
                 text: showIconsOnly ? "" : currentDescription
-                iconName: showIconsOnly ? iconNameFromPort(currentPort, IconName) : ""
+                iconName: showIconsOnly ? iconNameFromPort(currentPort, defaultIconName) : ""
 
                 checkable: true
                 exclusiveGroup: buttonGroup
