@@ -25,6 +25,7 @@ import QtQuick.Controls 1.0
 Item {
     property alias cfg_showIconsOnly: showIconsOnly.checked
     property alias cfg_useVerticalLayout: useVerticalLayout.checked
+    property alias cfg_defaultIconName: defaultIconName.currentText
 
     ColumnLayout {
         Layout.fillWidth: true
@@ -35,6 +36,14 @@ Item {
         CheckBox {
             id: useVerticalLayout
             text: i18n("Use vertical layout")
+        }
+        Label {
+            text: i18n("Default icon")
+            topPadding: 25
+        }
+        ComboBox {
+            id: defaultIconName
+            model: ["audio-speakers-symbolic", "audio-headphones", "audio-card"]
         }
     }
 }
