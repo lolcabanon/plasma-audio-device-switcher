@@ -41,6 +41,11 @@ Item {
 
     property bool useVerticalLayout: plasmoid.configuration.useVerticalLayout
 
+    property bool sourceInsteadofSink: plasmoid.configuration.sourceInsteadofSink
+    property var sinkModel: SinkModel {}
+    property var sourceModel: SourceModel {}
+    property var selectedModel: sourceInsteadofSink ? sourceModel : sinkModel
+
     property string defaultIconName: plasmoid.configuration.defaultIconName
 
     // see https://github.com/KDE/plasma-pa/blob/master/applet/contents/code/icon.js
@@ -91,8 +96,7 @@ Item {
         }
 
         Repeater {
-            model: SinkModel {
-            }
+            model: selectedModel
 
             delegate: PlasmaComponents.Button {
                 id: tab
