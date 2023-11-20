@@ -27,6 +27,8 @@ Item {
     property alias cfg_usePortDescription: usePortDescription.checked
 
     property alias cfg_useVerticalLayout: useVerticalLayout.checked
+    
+    property alias cfg_sourceInsteadofSink: sourceInsteadofSink.checked
 
     property string cfg_defaultIconName: null
 
@@ -63,6 +65,11 @@ Item {
         CheckBox {
             id: useVerticalLayout
             text: i18n("Use vertical layout")
+        }
+
+        CheckBox {
+            id: sourceInsteadofSink
+            text: i18n("Control source instead of sink")
         }
 
         Label {
