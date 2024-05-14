@@ -22,19 +22,20 @@ import QtQuick 2.2
 import QtQuick.Layouts 1.0
 import QtQuick.Controls 1.2 as QtControls
 
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.components 2.0 as PlasmaComponents
-import org.kde.plasma.plasmoid 2.0
+// import org.kde.plasma.core as PlasmaCore
+// import org.kde.kirigami as Kirigami
+import org.kde.plasma.components as PlasmaComponents
+import org.kde.plasma.plasmoid
 
 // plasma pulseaudio plugin
-import org.kde.plasma.private.volume 0.1
+import org.kde.plasma.private.volume
 
-Item {
+PlasmoidItem {
     id: main
 
     Layout.minimumWidth: gridLayout.implicitWidth
     Layout.minimumHeight: gridLayout.implicitHeight
-    Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
+    preferredRepresentation: fullRepresentation
 
     property int labeling: plasmoid.configuration.labeling
     property bool usePortDescription: plasmoid.configuration.usePortDescription
@@ -45,12 +46,10 @@ Item {
 
     // see https://github.com/KDE/plasma-pa/blob/master/applet/contents/code/icon.js
     function formFactorIcon(formFactor, fallback) {
-
-        // return fallback;
-
         switch(formFactor) {
             case "internal":
-                return "audio-card";
+                // return "audio-card";
+                return "computer-laptop";
             case "speaker":
                 return "audio-speakers-symbolic";
             case "phone":

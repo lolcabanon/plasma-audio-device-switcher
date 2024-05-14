@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "jules@lafabriquevirtuelle.com",
+                "Name": "Jules Luzy-Riopel (inspired by Andreas Krutzler original version https://github.com/akrutzler/plasma-audio-device-switcher)"
+            }
+        ],
+        "Category": "Multimedia",
+        "Description": "Simple widget to change the default audio output device/sink",
+        "EnabledByDefault": true,
+        "Icon": "org.kde.plasma.volume",
+        "Id": "org.kde.plasma.audiodeviceswitcherenhanced6",
+        "License": "GPL",
+        "Name": "Audio Device Switcher Enhanced",
+        "Version": "0.5.0",
+        "Website": "https://github.com/akrutzler/plasma-audio-device-switcher"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
